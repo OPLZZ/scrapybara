@@ -16,6 +16,14 @@ require 'pry'
 require 'scrapybara'
 
 VCR.configure do |c|
-  c.cassette_library_dir = File.dirname(__FILE__) + '/fixtures/vcr_cassettes'
+  c.cassette_library_dir = File.expand_path( Pathname( File.expand_path( 'fixtures/vcr_cassettes', File.dirname(__FILE__) ) ) )
   c.hook_into :webmock
+end
+
+class Test::Unit::TestCase
+
+  def fixture_file(path)
+    File.read File.expand_path( path, Pathname( File.expand_path( 'fixtures', File.dirname(__FILE__) ) ) )
+  end
+
 end

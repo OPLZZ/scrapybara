@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'scrapybara'
+
+STDOUT.sync             = true
+Sidekiq::Logging.logger = nil
+
+cli = Scrapybara::CLI.new
+cli.run!
