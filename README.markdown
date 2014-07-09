@@ -54,3 +54,7 @@ You can enable `debug` for `interactive` mode to add even more breakpoints when 
     bundle exec ./bin/scrapybara examples/job-it.rb --debug --interactive
 
 ----
+
+##Funding
+<a href="http://esfcr.cz/" target="_blank"><img src="http://novamedia.ff.cuni.cz/system/files/oplzz_banner_en.png" alt="Project of Operational Programme Human Resources and Employment No. CZ.1.04/5.1.01/77.00440."></a>
+The project No. CZ.1.04/5.1.01/77.00440 was funded from the European Social Fund through the Operational Programme Human Resources and Employment and the state budget of Czech Republic.
